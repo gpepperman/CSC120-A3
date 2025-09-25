@@ -1,3 +1,4 @@
+// all the imports needed for the program
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -67,6 +68,7 @@ class Conversation implements ConversationRequirements {
         List<String> randomResponse = new ArrayList<>(); //create a list of random responses
         randomResponse.add("Thanks for saying: " + input);
         randomResponse.add("I don't understand: " + input + ". Please say something else");
+        randomResponse.add("Please don't say: " + input + ". Choose something I can actually answer!");
         randomResponse.add("Well that's great! I guess...");
         randomResponse.add("Well this is awkward because I've got nothing to say to that...");
 
